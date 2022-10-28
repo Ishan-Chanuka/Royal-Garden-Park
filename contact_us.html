@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Index.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <style>
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .form-header {
+            font-size: 18px;
+            border-bottom: 1px solid #f4f4f4;
+            padding: 10px 0;
+        }
+
+        body {
+            font-family: arial, verdana;
+            font-size: 15px;
+        }
+
+        .wrapper {
+            padding: 0 25px;
+            width: 710px;
+            border: 1px solid #666;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid #3c8dbc;
+        }
+
+		form {
+		margin: 30px 0;
+		}
+
+        .form-label {
+            float: left;
+            width: 150px;
+        }
+
+        .form-row {
+            margin: 12px 0;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 500px;
+            height: 28px;
+            border: 1px solid #d2d6de;
+            padding: 2px 8px;
+        }
+
+        textarea {
+            height: 50px;
+        }
+
+        input[type=radio],
+        input[type=checkbox] {
+            width: 20px;
+            color: red;
+            height: 14px;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            width: 100px;
+            margin-right: 50px;
+			background-color: #3c8dbc;
+			border-color: #367fa9;
+			color: #ffffff;
+			cursor: pointer;
+        }
+		input[type=submit]:hover,
+        input[type=reset]:hover {
+		    background-color: #367fa9;
+        }
+
+
+        .form-field:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Facilities</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Contact us</a></li>
+              <div class="search">
+                  <input type="text" name="search" id="search" placeholder="Hi....">
+              </div>
+          </ul>
+      </nav>
+   </header>
+
+    <div class="wrapper">
+        <div class="form-header">Simple HTML Contact Form</div>
+        <form action="" method="">
+
+            <div class="form-row">
+                <div class="form-label">Name</div>
+                <div class="form-field">
+                    <input type="text" name="name" />
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-label">Phone</div>
+                <div class="form-field">
+                    <input type="number" name="phone" placeholder="Please enter a number only" /> </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-label">Message</div>
+                <div class="form-field">
+                    <textarea name="message" rows="5" cols="50"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-label"> &nbsp; </div>
+                <div class="form-field">
+                    <input type="reset" name="reset" />
+                    <input type="submit" name="message" value="Submit" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
